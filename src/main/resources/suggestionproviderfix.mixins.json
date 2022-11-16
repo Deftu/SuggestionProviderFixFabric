@@ -4,7 +4,6 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "suggestionproviderfix.refmap.json",
   "mixins": [
-    "SharedSuggestionProviderMixin"
-  ],
-  "minVersion": "0.8.4"
+    "CommandSourceMixin"
+  ]
 }
