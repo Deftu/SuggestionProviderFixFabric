@@ -14,7 +14,7 @@ import java.util.function.Function;
 @Mixin(CommandSource.class)
 public interface CommandSourceMixin {
     /**
-     * Overwrites {@link CommandSource#forEachMatching(Iterable, String, Function, Consumer)}. This is an
+     * @reason Overwrites {@link CommandSource#forEachMatching(Iterable, String, Function, Consumer)}. This is an
      * {@link Overwrite} since mixin doesn't currently allow injectors in interfaces.
      *
      * <p>Difference in this method to the original is that it negates a check for the namespace being {@code
@@ -39,6 +39,5 @@ public interface CommandSourceMixin {
                 consumer.accept(resource);
             }
         }
-
     }
 }
