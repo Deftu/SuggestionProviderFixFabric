@@ -1,10 +1,14 @@
 plugins {
     java
     `maven-publish`
-    val dgt = "1.1.0"
-    id("xyz.deftu.gradle.tools") version(dgt)
-    id("xyz.deftu.gradle.tools.loom") version(dgt)
-    id("xyz.deftu.gradle.tools.blossom") version(dgt)
+    var dgt = "1.22.2"
+    id("dev.deftu.gradle.tools") version dgt
+    id("dev.deftu.gradle.tools.resources") version dgt
+    id("dev.deftu.gradle.tools.blossom") version dgt
+    id("dev.deftu.gradle.tools.maven-publishing") version dgt
+    id("dev.deftu.gradle.tools.minecraft.loom") version dgt
+    id("dev.deftu.gradle.tools.minecraft.api") version dgt
+    id("dev.deftu.gradle.tools.minecraft.releases") version dgt
 }
 
 /*releases {
